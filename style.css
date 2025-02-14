@@ -224,3 +224,19 @@ header nav ul li a:hover {
   transform: scale(1.1);
   transition: transform 0.5s;
 }
+/* clients-secation */
+.clients .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.clients .content {
+  margin-top: var(--content-margin);
+  text-align: center;
+  width: 50%;
+  line-height: 1.5;
+  color: #d3d2cd;
+  font-size: 20px;
+}
+/*  */
