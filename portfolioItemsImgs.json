@@ -1,0 +1,32 @@
+[
+  {
+    "img": "imgs/1.jpg",
+    "title": "project 1",
+    "text": "I'm a paragraph. Click here to add your own text and edit me. It"
+  },
+  {
+    "img": "imgs/2.jpg",
+    "title": "project 2",
+    "text": "I'm a paragraph. Click here to add your own text and edit me. It"
+  },
+  {
+    "img": "imgs/3.jpg",
+    "title": "project 3",
+    "text": "I'm a paragraph. Click here to add your own text and edit me. It"
+  },
+  {
+    "img": "imgs/4.jpg",
+    "title": "project 4",
+    "text": "I'm a paragraph. Click here to add your own text and edit me. It"
+  },
+  {
+    "img": "imgs/5.jpg",
+    "title": "project 5",
+    "text": "I'm a paragraph. Click here to add your own text and edit me. It"
+  },
+  {
+    "img": "imgs/6.jpg",
+    "title": "project 6",
+    "text": "I'm a paragraph. Click here to add your own text and edit me. It"
+  }
+]
