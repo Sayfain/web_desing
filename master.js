@@ -1,6 +1,4 @@
 let portfolioBox = document.getElementById("portfolio-box");
-console.log(portfolioBox);
-
 async function getData(datLink) {
   try {
     const fetchData = await fetch(datLink);
@@ -16,13 +14,14 @@ data.then((data) => {
   data.forEach((item) => {
     portfolioBox.innerHTML += `
         <div class="portfolio-item">
-            <img src="${item.img}" alt="" />
-            <h3>${item.title}</h3>
-            <p>
-            ${item.text}
-            </p>
+            <img src="${item.img}" alt="portfolio_img" />
+            <div class="portfolio-item-text">
+                <h3>${item.title}</h3>
+                <p>
+                ${item.text}
+                </p>
+            </div>
         </div>
         `;
   });
 });
-
