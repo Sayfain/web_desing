@@ -4,12 +4,7 @@ logs
 npm-debug.log*
 pnpm-debug.log*
 
-
-node_modules
-dist
-dist-ssr
-*.local
-
+normalize.css
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
