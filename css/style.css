@@ -14,7 +14,9 @@ html {
   --paragraph-color: #bababa;
   --content-margin: 50px;
 }
-
+a {
+  color: black;
+}
 .container {
   padding: 0 1rem;
   margin: 0 auto;
@@ -160,6 +162,11 @@ header nav ul li a:hover {
   color: #d3d2cd;
   font-size: 20px;
 }
+@media screen and (max-width: 768px) {
+  .about .content {
+    width: 100%;
+  }
+}
 /* portfoilo-seaction */
 .portfolio .container .content {
   margin-top: var(--content-margin);
@@ -239,4 +246,117 @@ header nav ul li a:hover {
   color: #d3d2cd;
   font-size: 20px;
 }
+@media screen and (max-width: 768px) {
+  .clients .content {
+    width: 100%;
+  }
+}
 /* contact-seaction */
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.contact .container h4 {
+  font-size: 20px;
+  color: #363636;
+}
+
+.contact .content form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact .content form .all-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .form-group:first-child {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.contact .form-group:first-child input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #605e5e;
+}
+
+.contact .form-group:first-child input:focus {
+  outline: none;
+}
+
+.contact form button {
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #605e5e;
+  background-color: transparent;
+  border: none;
+}
+
+.contact .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  color: #5c5c5c;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .form-group:first-child input {
+    width: 100%;
+  }
+
+  .contact form button {
+    font-size: 15px;
+  }
+
+  .contact .content form {
+    flex-direction: column;
+  }
+
+  .contact .info {
+    font-size: 15px;
+  }
+}
+
+/* footer */
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #ffff;
+  padding: 20px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 10px;
+}
+footer .socail-media {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+footer .content p {
+  color: #605e5e;
+  font-style: italic;
+}
