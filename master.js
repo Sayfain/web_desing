@@ -1,13 +1,6 @@
+import { getData } from "./javascript/getData.js";
+
 let portfolioBox = document.getElementById("portfolio-box");
-async function getData(datLink) {
-  try {
-    const fetchData = await fetch(datLink);
-    const data = await fetchData.json();
-    return data;
-  } catch (error) {
-    console.log(Error(error));
-  }
-}
 const data = getData("./portfolioItemsImgs.json");
 
 data.then((data) => {
@@ -24,4 +17,11 @@ data.then((data) => {
         </div>
         `;
   });
+});
+
+console.log(window.scrollX);
+document.addEventListener("scroll", (e) => {
+  if (window.scrollX > 400) {
+    window.scroll(0, 0);
+  }
 });
