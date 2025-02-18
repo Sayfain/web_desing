@@ -104,7 +104,7 @@ header nav ul li a:hover {
 }
 /* home secation */
 .home {
-  background-image: url(./imgs/home_img.avif);
+  background-image: url(../imgs/home_img.avif);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
