@@ -348,7 +348,7 @@ footer .container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+
   gap: 10px;
 }
 footer .socail-media {
@@ -360,3 +360,23 @@ footer .content p {
   color: #605e5e;
   font-style: italic;
 }
+/* Additional comments or styling can be added here */
+
+.component button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #dadee1;
+  color: #db111154;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: -50px;
+  transition: all 1s;
+}
+.component button.show {
+  right: 25px;
+}
+
+/* End of css/style.css */

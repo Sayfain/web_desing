@@ -18,10 +18,23 @@ data.then((data) => {
         `;
   });
 });
+const upButton = document.getElementById("up-button");
+const pageHeight = document.documentElement.scrollHeight;
 
-console.log(window.scrollX);
-document.addEventListener("scroll", (e) => {
-  if (window.scrollX > 400) {
-    window.scroll(0, 0);
+const handleScroll = () => {
+  if (window.scrollY > pageHeight / 2) {
+    upButton.classList.add("show");
+  } else {
+    upButton.classList.remove("show");
   }
-});
+};
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+document.addEventListener("scroll", handleScroll);
+upButton.addEventListener("click", scrollToTop);
